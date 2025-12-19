@@ -65,5 +65,8 @@ private:
     void setButtonIsHovered(QAbstractButton *button, bool isHovered); // Включение / отключение подсветки кнопки
     void restartGame();                       // Перезапуск игры с нуля
     void stopGame();                          // Остановка игры (сброс всего)
+    void clearAllTimers();                    // Очистка всех работающих таймеров
+    void showRestartConfirmationDialog();     // Показ диалога при нажатии кнопки старт во время игры
+    void showGameOverDialog();                // Показ диалога при проигрыше
 };
 #endif // SIMONSAYS_H
